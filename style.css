@@ -1,0 +1,28 @@
+.body{
+    background: linear-gradient(to right, rgb(143, 143, 243), rgb(41, 41, 218), rgb(241, 141, 211))
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+}
+.icone{
+    width: 80px;
+    height: 80px;
+    background-size: contain;
+    background-image: url("img/download.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: anima  linear infinite;
+    animation-duration: calc(300s/ var(--i));
+
+}
+@keyframes anima{
+    0%{
+        transform: translateY(100vh) scale(0) rotate(0deg);
+    }
+    100% {
+        transform: translate(-10vh) scale(1) rotate(360deg);
+    }
+}
